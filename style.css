@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {  
+    position: relative;
+    background: #034882;
+    color: #fff;
+    background-image: url(https://freerangestock.com/sample/115472/indie-music-band-on-stage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    border-radius: 50px;
+    border: 2px solid #fff;
+    margin: 20px;
+    padding: 40px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+.container li {
+    margin: 10px;
+}
+
+nav {
+    justify-content:space-evenly;
+    margin: 20px;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+}
+
+nav ul li {
+    flex: 1;
+    list-style: none;
+    border-radius: 50px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover {
+    background-color: rgba(2, 119, 199, 0.5);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10%;
+}
+
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.largeheader {
+    margin-right: 7%;
+    padding-top: 12%;
+    animation: fade 2s ease-in;
+    font-size: 500%;
+    text-align: right;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: 200;
+}
+
+.largeheader:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: left;
+    margin: 20px;
+}
+
+.button {
+    display: block;
+    border: 1px solid #034882;
+    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background: #034882;  
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;  
+    border-radius: 10px;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+.about img {
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 100px;
+}
+
+.bio {
+    display: flex;
+    margin-top: 20px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>  
+   <head> 
+        <meta charset = "utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style type="text/css">
+            table { 
+                flex-wrap: wrap;
+                margin: auto;
+                align-items:center;
+                border-collapse: collapse;
+            }
+            td, th {
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #fff;
+            }
+            .availability { background-color: rgba(0, 255, 106, 0.2);}
+            .button{ 
+                display: block;
+                border: 1px solid #034882;
+                color: #fff;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+                background: #034882;  
+                padding: 14px 60px;
+                font-size: 18px;
+                margin-top: 20px;
+                cursor: pointer;  
+                border-radius: 10px;
+            }
+            .button:hover {
+                transform: scale(1.05);
+            } 
+            form input, form textarea {
+                width: 100%;
+                outline: none;
+                padding: 15px;
+                margin: 15px 0;
+                color: #034882;
+                font-size: 18px;
+                border: 2px solid #034882;
+                border-radius: 10px;
+            }
+            .is-mobile {display:none;}
+            @media (max-width: 600px) {
+                .is-mobile {display:block;}
+                .no-mobile {display:none;}
+            }
+        </style>
+   </head> 
+   <body> 
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="band.html">Home</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="songs.html">Songs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>            
+        </header>
+        <div class="container">
+            <h1>Availability</h3>
+                <div class="no-mobile">
+                    <table style="padding-left: 1%" cellpadding="4" cellspacing="5">
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                        <tr>
+                            <td>Morning</td>
+                            <td>Morning</td>
+                            <td>Morning</td>
+                            <td>Morning</td>
+                            <td>Morning</td>
+                            <td>Morning</td>
+                            <td>Morning</td>
+                        </tr>
+                        <tr class="availability">
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Afternoon</td>
+                            <td>Afternoon</td>
+                            <td>Afternoon</td>
+                            <td>Afternoon</td>
+                            <td>Afternoon</td>
+                            <td>Afternoon</td>
+                            <td>Afternoon</td>
+                        </tr>
+                        <tr class="availability">
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                        </tr>
+                    </table>                    
+                </div>
+                <h2>Book Us</h2>
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+        </div>
+	</body>
+</html>
